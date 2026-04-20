@@ -218,20 +218,7 @@ Experiment with:
 
 ## How to Run
 
-### Option 1 — Quick Start (Recommended)
-
-```bash
-git clone https://github.com/manandhar-shairu/mind-recommender.git
-cd mind-recommender
-pip install torch numpy pandas scikit-learn tqdm
-```
-
-Then open in Jupyter or Colab and run:
-```bash
-notebooks/03_training.ipynb
-```
-
-### Option 2 — Full Pipeline (From scratch)
+### Full Pipeline (From scratch)
 This section assumes the user has **nothing except the cloned repository**.
 
 
@@ -260,7 +247,7 @@ MIND-small Dataset from: https://msnews.github.io/
 GloVe Embeddings (300d) from: https://nlp.stanford.edu/projects/glove/
 Use glove.6B.300d.txt
 
-### 4. Project Structure 
+### 4. Expected Project Structure 
 ```
 mind-recommender/
 │
@@ -288,13 +275,18 @@ mind-recommender/
 ```
 
 ### 5. Run the Pipeline
-You must run notebooks in order because each step generates data for the next:
+You must run notebooks in this exact order because each step generates data for the next:
 1. notebooks/01_eda.ipynb
 2. notebooks/02_preprocessing.ipynb
 3. notebooks/03_training.ipynb
 
 ### 6. Evaluation
 Evaluation runs automatically after each epoch using: src/evaluate.py
+
+### Notes
+- The results/ folder contains EDA visualizations and processed outputs
+- The models/ folder is created automatically during training
+- .gitignore excludes large files (data, embeddings, checkpoints)
 
 ## Conclusion
 
