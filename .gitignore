@@ -1,0 +1,19 @@
+# Data & models
+data/
+models/
+
+# Processed files
+*.pkl
+*.npy
+*.pt
+*.vec
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
