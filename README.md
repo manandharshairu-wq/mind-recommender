@@ -29,6 +29,21 @@ Each impression contains:
 - User history (clicked articles)
 - Candidate articles with labels (clicked / not clicked)
 
+The raw MIND-small training and validation TSV files were successfully loaded into pandas DataFrames using the provided column names. The setup was verified by inspecting the first few rows of both `behaviors.tsv` and `news.tsv` for the training and validation sets.
+
+## Missing Values Analysis
+
+The dataset is relatively clean, with missing values concentrated in expected areas:
+
+- **News Dataset:**
+  - Missing values are primarily found in the `abstract` column (~2666 entries)
+  - This indicates that some articles do not contain summaries
+  - However, all articles contain titles, ensuring sufficient textual information for modeling
+
+- **Behaviors Dataset:**
+  - Missing values appear in the `history` column (~3238 entries)
+  - This represents **cold-start users** with no prior interaction history
+
 ---
 
 ## Project Phases
@@ -57,7 +72,7 @@ Each impression contains:
 - Parsed impressions into positive and negative samples  
 
 **Negative Sampling:**
-- 1 positive + 4 negatives per sample  
+1 positive + 4 negatives per sample
 
 ---
 
@@ -115,16 +130,19 @@ Key observations:
 - MRR and nDCG show strong ranking performance, meaning the model is successfully placing clicked articles near the top
 - Loss decreases monotonically, confirming stable optimization.
 - Performance gains begin to plateau after Epoch 4, suggesting that the model has converged.
-
+- The model achieves relatively **high metric values**, but this is expected due to the simplified evaluation setup.
 ---
+
 
 ### Important Evaluation Note
 
 Evaluation was performed using: 1 positive + 4 sampled negatives (5 total candidates). This differs from the official MIND benchmark, which uses full candidate lists.
 
-Implications:
-- Easier ranking task  
-- Higher MRR and nDCG values  
+### Implication:
+Because the number of candidates is small:
+- The ranking task becomes easier
+- Higher MRR and nDCG values
+- Metrics such as nDCG@10 effectively behave the same as nDCG@5
 
 Therefore, results are **not directly comparable** to benchmark scores.
 
