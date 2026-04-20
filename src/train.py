@@ -3,9 +3,19 @@ import torch.nn as nn
 import torch.optim as optim
 from tqdm import tqdm
 
+import numpy as np
+import random
+
 from src.model import NRMSModel
 from src.evaluate import evaluate
 
+# Set random seeds for reproducibility
+torch.manual_seed(42)
+np.random.seed(42)
+random.seed(42)
+
+if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(42)
 
 def train_model(train_loader, val_loader, embedding_matrix, device, epochs=5):
 
