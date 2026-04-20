@@ -48,21 +48,21 @@ The dataset is relatively clean, with missing values concentrated in expected ar
 
 ## Project Phases
 
-### Phase 1 — Environment Setup & Data Acquisition
+### Phase 1 — Environment Setup & Data Acquisition 
 - Downloaded MIND-small dataset  
 - Downloaded GloVe 300d embeddings  
 - Organized directory structure  
 
 ---
 
-### Phase 2 — Exploratory Data Analysis (EDA)
+### Phase 2 — Exploratory Data Analysis (EDA): (Notebook1 - Graphs stored under results/)
 - Analyzed user activity and click distribution  
 - Studied category distribution and behavior patterns  
-- Identified sparsity and imbalance  
+- Identified data sparsity and imbalance  
 
 ---
 
-### Phase 3 — Data Preprocessing & Feature Engineering
+### Phase 3 — Data Preprocessing & Feature Engineering (Notebook2)
 
 - Tokenized news titles  
 - Built vocabulary with frequency filtering  
@@ -76,7 +76,7 @@ The dataset is relatively clean, with missing values concentrated in expected ar
 
 ---
 
-### Phase 4 — Model Architecture (NRMS)
+### Phase 4 — Model Architecture (NRMS): (Notebook3)
 
 #### News Encoder
 - Word embeddings (GloVe)  
@@ -94,7 +94,7 @@ The dataset is relatively clean, with missing values concentrated in expected ar
 
 ---
 
-### Phase 5 — Training
+### Phase 5 — Training/ Hypertuning (Notebook3)
 
 - Loss: CrossEntropyLoss  
 - Optimizer: Adam  
@@ -105,7 +105,7 @@ The dataset is relatively clean, with missing values concentrated in expected ar
 
 ---
 
-### Phase 6 — Evaluation
+### Phase 6 — Evaluation (Notebook3)
 
 Metrics used:
 - AUC  
