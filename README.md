@@ -46,7 +46,7 @@ The dataset is relatively clean, with missing values concentrated in expected ar
 
 ---
 
-## Project Phases
+## Methodology: Project Phases
 
 ### Phase 1 — Environment Setup & Data Acquisition 
 - Downloaded MIND-small dataset  
@@ -158,6 +158,17 @@ Therefore, results are **not directly comparable** to benchmark scores.
 
 ---
 
+## Outputs
+
+The pipeline generates:
+
+- Trained model checkpoints in `models/`
+- Processed datasets (.pkl files)
+- EDA visualizations in `results/`
+- Evaluation metrics printed during training
+
+---
+
 ## Error Analysis
 
 ### 1. Simplified Candidate Sampling
@@ -215,9 +226,9 @@ cd mind-recommender
 pip install torch numpy pandas scikit-learn tqdm
 ```
 
-Then run: 
+Then open in Jupyter or Colab and run:
 ```bash
-notebooks/3_training.ipynb
+notebooks/03_training.ipynb
 ```
 
 ### Option 2 — Full Pipeline (From scratch)
@@ -284,3 +295,7 @@ You must run notebooks in order because each step generates data for the next:
 
 ### 6. Evaluation
 Evaluation runs automatically after each epoch using: src/evaluate.py
+
+## Conclusion
+
+This project successfully implements an attention-based news recommendation system using NRMS. The model demonstrates stable learning and strong ranking performance under sampled evaluation settings. While results are promising, future improvements should focus on full-candidate evaluation and richer feature representations for more realistic performance benchmarking.
