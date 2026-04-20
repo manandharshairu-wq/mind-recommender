@@ -238,7 +238,7 @@ cd mind-recommender
 
 ### 2. Install Dependencies
 ```bash
-pip install torch numpy pandas scikit-learn tqdm matplotlib
+pip install -r requirements.txt
 ```
 
 Optional for GPU
