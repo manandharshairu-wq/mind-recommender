@@ -231,6 +231,7 @@ GloVe Embeddings (300d) from: https://nlp.stanford.edu/projects/glove/
 Use glove.6B.300d.txt
 
 ### 4. Project Structure 
+```
 mind-recommender/
 │
 ├── data/
@@ -254,6 +255,7 @@ mind-recommender/
 │   └── train.py
 │
 └── README.md
+```
 
 ### 5. Run the Pipeline
 You must run notebooks in order because each step generates data for the next:
