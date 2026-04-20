@@ -198,7 +198,8 @@ pip install torch numpy pandas scikit-learn tqdm
 ```
 
 Then run: 
-```bash notebooks/3_training.ipynb
+```bash
+notebooks/3_training.ipynb
 ```
 
 ### Option 2 — Full Pipeline (From scratch)
