@@ -159,7 +159,12 @@ Therefore, results are **not directly comparable** to benchmark scores.
 | nDCG@5 | 0.30 – 0.34   | **0.6875** |
 
 ---
+### Experiments
+<img width="681" height="270" alt="Screenshot 2026-04-20 at 4 32 20 PM" src="https://github.com/user-attachments/assets/f75eeaea-40ac-4c6d-8e2e-dfa63d39eba6" />
 
+The baseline model achieved the best overall performance across all metrics. Increasing the learning rate (Experiment 1) led to slightly faster optimization but resulted in a small drop in ranking performance, indicating mild instability. Reducing the learning rate (Experiment 2) slowed learning and produced lower scores within fewer epochs. Experiment 3 shows that the model had already learned strong representations by epoch 3, suggesting early convergence.
+
+---
 ## Outputs
 
 The pipeline generates:
