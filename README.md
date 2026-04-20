@@ -244,7 +244,7 @@ pip install torch --index-url https://download.pytorch.org/whl/cu118
 You must manually download:
 MIND-small Dataset from: https://msnews.github.io/
 
-GloVe Embeddings (300d) from: https://nlp.stanford.edu/projects/glove/
+GloVe Embeddings (300d) from: https://nlp.stanford.edu/projects/glove/ . 
 Use glove.6B.300d.txt
 
 ### 4. Expected Project Structure 
