@@ -195,7 +195,11 @@ Experiment with:
 git clone https://github.com/manandhar-shairu/mind-recommender.git
 cd mind-recommender
 pip install torch numpy pandas scikit-learn tqdm
-Then run: notebooks/3_training.ipynb
+```
+
+Then run: 
+```bash notebooks/3_training.ipynb
+```
 
 ### Option 2 — Full Pipeline (From scratch)
 This section assumes the user has **nothing except the cloned repository**.
@@ -206,14 +210,17 @@ This section assumes the user has **nothing except the cloned repository**.
 ```bash
 git clone https://github.com/manandhar-shairu/mind-recommender.git
 cd mind-recommender
+```
 
 ### 2. Install Dependencies
 ```bash
 pip install torch numpy pandas scikit-learn tqdm matplotlib
+```
 
 Optional for GPU
 ```bash
 pip install torch --index-url https://download.pytorch.org/whl/cu118
+```
 
 ### 3. Download Required Data
 
