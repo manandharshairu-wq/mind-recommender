@@ -145,7 +145,7 @@ Therefore, results are **not directly comparable** to benchmark scores.
 ### 1. Simplified Candidate Sampling
 - Only 5 candidates per impression  
 - Leads to inflated evaluation metrics
-- 
+  
 ### 2. Limited Text Features
 - Only titles used  
 - Abstracts ignored
