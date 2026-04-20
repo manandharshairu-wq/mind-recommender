@@ -1,4 +1,3 @@
-<img width="675" height="202" alt="Screenshot 2026-04-20 at 10 38 13 AM" src="https://github.com/user-attachments/assets/73ceddc5-8401-4e90-abd9-2961765adaf6" />
 # News Recommendation System (NRMS on MIND-small)
 
 ## Project Overview
