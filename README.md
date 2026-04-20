@@ -105,15 +105,6 @@ Metrics used:
 ### Performance Across Epochs
 <img width="675" height="202" alt="Screenshot 2026-04-20 at 10 38 31 AM" src="https://github.com/user-attachments/assets/c0e39c57-c063-4904-9fd9-7a5cd78f7716" />
 
-
-|Epoch | AUC    | MRR    | nDCG@5 | Loss   |
-|------|--------|--------|--------|--------|
-| 1    | 0.6295 | 0.5559 | 0.6660 | 1.4825 |
-| 2    | 0.6394 | 0.5673 | 0.6746 | 1.4126 |
-| 3    | 0.6487 | 0.5754 | 0.6808 | 1.3804 |
-| 4    | 0.6552 | 0.5834 | 0.6868 | 1.3579 |
-| 5    | 0.6562 | 0.5842 | 0.6875 | 1.3420 |
-
 ---
 
 ### Evaluation Interpretation
