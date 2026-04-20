@@ -94,7 +94,7 @@ The dataset is relatively clean, with missing values concentrated in expected ar
 
 ---
 
-### Phase 5 — Training/ Hypertuning (Notebook3)
+### Phase 5 — Training & Hyperparameter Setup (Notebook3)
 
 - Loss: CrossEntropyLoss  
 - Optimizer: Adam  
@@ -119,6 +119,8 @@ Metrics used:
 
 ### Performance Across Epochs
 <img width="675" height="202" alt="Screenshot 2026-04-20 at 10 38 31 AM" src="https://github.com/user-attachments/assets/c0e39c57-c063-4904-9fd9-7a5cd78f7716" />
+
+All metrics improve consistently across epochs, indicating stable convergence without overfitting.
 
 ---
 
